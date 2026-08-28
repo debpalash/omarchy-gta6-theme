@@ -1,0 +1,133 @@
+{
+  "default": "vice-sunset",
+  "editions": [
+    {
+      "slug": "vice-sunset",
+      "name": "Vice Sunset",
+      "description": "The default charcoal-plum palette with flamingo-pink focus.",
+      "palette": "colors.toml",
+      "wallpaper": "backgrounds/1-vice-sunset-ultrawide.png",
+      "wallhaven": "https://wallhaven.cc/w/7pmg8e"
+    },
+    {
+      "slug": "all-stars",
+      "name": "All Stars",
+      "description": "Ink-purple surfaces with the getaway car's electric cyan focus.",
+      "palette": "variants/all-stars.toml",
+      "wallpaper": "backgrounds/13-all-stars-heist.jpg",
+      "wallhaven": "https://wallhaven.cc/w/je59gp"
+    },
+    {
+      "slug": "safehouse-glow",
+      "name": "Safehouse Glow",
+      "description": "Bedroom plum with the window light's soft coral focus.",
+      "palette": "variants/safehouse-glow.toml",
+      "wallpaper": "backgrounds/14-bedroom-light.jpg",
+      "wallhaven": "https://wallhaven.cc/w/yqjm57"
+    },
+    {
+      "slug": "leonida-blue",
+      "name": "Leonida Blue",
+      "description": "Deep-water navy with a clear tropical-cyan focus.",
+      "palette": "variants/leonida-blue.toml",
+      "wallpaper": "backgrounds/15-leonida-blue.jpg",
+      "wallhaven": "https://wallhaven.cc/w/mlp319"
+    },
+    {
+      "slug": "sunset-traffic",
+      "name": "Sunset Traffic",
+      "description": "Asphalt burgundy with the skyline's rose light.",
+      "palette": "variants/sunset-traffic.toml",
+      "wallpaper": "backgrounds/16-sunset-traffic.jpg",
+      "wallhaven": "https://wallhaven.cc/w/rrwdzw"
+    },
+    {
+      "slug": "city-highway",
+      "name": "City Highway",
+      "description": "Storm-charcoal surfaces with sodium streetlight gold.",
+      "palette": "variants/city-highway.toml",
+      "wallpaper": "backgrounds/17-city-highway.jpg",
+      "wallhaven": "https://wallhaven.cc/w/rq31v1"
+    },
+    {
+      "slug": "coastal-rider",
+      "name": "Coastal Rider",
+      "description": "A light concrete palette keyed to the bike's deep green.",
+      "palette": "variants/coastal-rider.toml",
+      "wallpaper": "backgrounds/18-coastal-rider.jpg",
+      "wallhaven": "https://wallhaven.cc/w/w5okjr"
+    },
+    {
+      "slug": "skyway-sunset",
+      "name": "Skyway Sunset",
+      "description": "Near-black red with the highway sunset's coral focus.",
+      "palette": "variants/skyway-sunset.toml",
+      "wallpaper": "backgrounds/19-highway-sunset-8k.png",
+      "wallhaven": "https://wallhaven.cc/w/wewqeq"
+    },
+    {
+      "slug": "getaway-heat",
+      "name": "Getaway Heat",
+      "description": "Police-light violet with a softened rose focus.",
+      "palette": "variants/getaway-heat.toml",
+      "wallpaper": "backgrounds/20-getaway.jpg",
+      "wallhaven": "https://wallhaven.cc/w/yqxj7d"
+    },
+    {
+      "slug": "rooftop-pink",
+      "name": "Rooftop Pink",
+      "description": "Palm-shadow wine with a direct hot-pink focus.",
+      "palette": "variants/rooftop-pink.toml",
+      "wallpaper": "backgrounds/21-rooftop-celebration.jpg",
+      "wallhaven": "https://wallhaven.cc/w/qz72kq"
+    },
+    {
+      "slug": "jack-of-hearts",
+      "name": "Jack of Hearts",
+      "description": "Nightclub blue-grey with cool signage cyan.",
+      "palette": "variants/jack-of-hearts.toml",
+      "wallpaper": "backgrounds/22-nightclub-priest.jpg",
+      "wallhaven": "https://wallhaven.cc/w/9o5x6k"
+    },
+    {
+      "slug": "pink-getaway",
+      "name": "Pink Getaway",
+      "description": "Black cherry surfaces drawn from the saturated cover art.",
+      "palette": "variants/pink-getaway.toml",
+      "wallpaper": "backgrounds/23-pink-getaway.jpg",
+      "wallhaven": "https://wallhaven.cc/w/6d7dp6"
+    },
+    {
+      "slug": "bullet-sunset",
+      "name": "Bullet Sunset",
+      "description": "Twilight violet with the skyline's cool lavender light.",
+      "palette": "variants/bullet-sunset.toml",
+      "wallpaper": "backgrounds/24-bullet-car-sunset.jpg",
+      "wallhaven": "https://wallhaven.cc/w/2yje7m"
+    },
+    {
+      "slug": "dockside-duo",
+      "name": "Dockside Duo",
+      "description": "A bright sea-glass palette with deep coastal blue focus.",
+      "palette": "variants/dockside-duo.toml",
+      "wallpaper": "backgrounds/25-dockside-duo.jpg",
+      "wallhaven": "https://wallhaven.cc/w/qr9qg7"
+    },
+    {
+      "slug": "gas-station-run",
+      "name": "Gas Station Run",
+      "description": "Dusk violet with the cover art's pale lilac focus.",
+      "palette": "variants/gas-station-run.toml",
+      "wallpaper": "backgrounds/26-convenience-run.jpg",
+      "wallhaven": "https://wallhaven.cc/w/qroj95"
+    },
+    {
+      "slug": "beach-cover",
+      "name": "Beach Cover",
+      "description": "Warm plum surfaces with the evening sky's coral focus.",
+      "palette": "variants/beach-cover.toml",
+      "wallpaper": "backgrounds/27-beach-cover.png",
+      "wallhaven": "https://wallhaven.cc/w/rqp39w"
+    }
+  ]
+}

@@ -7,6 +7,7 @@ theme_dir="${1:-.}"
 python3 - "$theme_dir" <<'PY'
 import pathlib
 import sys
+import json
 import tomllib
 
 root = pathlib.Path(sys.argv[1])
@@ -19,9 +20,24 @@ required = {
     "bright_green", "bright_cyan", "bright_blue", "bright_magenta",
 }
 
-palette_paths = [root / "colors.toml", *sorted((root / "variants").glob("*.toml"))]
-if len(palette_paths) < 4:
-    raise SystemExit("default palette and three variants are required")
+with (root / "variants" / "catalog.json").open() as handle:
+    catalog = json.load(handle)
+
+editions = catalog.get("editions", [])
+if len(editions) != 16:
+    raise SystemExit("default palette and fifteen wallpaper editions are required")
+
+slugs = [edition["slug"] for edition in editions]
+if len(slugs) != len(set(slugs)):
+    raise SystemExit("edition slugs must be unique")
+if catalog.get("default") != "vice-sunset" or editions[0]["slug"] != "vice-sunset":
+    raise SystemExit("vice-sunset must remain the default edition")
+
+palette_paths = [root / edition["palette"] for edition in editions]
+wallpaper_paths = [root / edition["wallpaper"] for edition in editions]
+for path in [*palette_paths, *wallpaper_paths]:
+    if not path.is_file():
+        raise SystemExit(f"edition file is missing: {path}")
 
 def luminance(value):
     channels = [int(value[index:index + 2], 16) / 255 for index in (1, 3, 5)]
@@ -53,8 +69,15 @@ for palette_path in palette_paths:
             raise SystemExit(f"{palette_path}: {key} contrast is only {ratio:.2f}:1")
 
 backgrounds = sorted((root / "backgrounds").glob("*"))
-if len(backgrounds) < 2:
-    raise SystemExit("at least two backgrounds are required")
+if len(backgrounds) != 27:
+    raise SystemExit("exactly 27 backgrounds are required")
+
+with (root / "assets.json").open() as handle:
+    assets = json.load(handle)["assets"]
+asset_files = [asset["file"] for asset in assets]
+background_files = [str(path.relative_to(root)) for path in backgrounds]
+if len(asset_files) != len(set(asset_files)) or sorted(asset_files) != background_files:
+    raise SystemExit("assets.json must record every background exactly once")
 
 print(f"validated {len(palette_paths)} palettes and {len(backgrounds)} backgrounds")
 PY

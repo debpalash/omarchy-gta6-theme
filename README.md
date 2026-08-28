@@ -1,6 +1,6 @@
 # GTA6 for Omarchy
 
-A restrained Grand Theft Auto VI fan theme collection for Omarchy. The default Vice Sunset palette keeps the desktop dark and readable, then lets flamingo pink, pool-water cyan, warm sand, and the supplied artwork carry the atmosphere.
+A restrained Grand Theft Auto VI fan theme collection for Omarchy. Vice Sunset is the default; fifteen additional editions derive their surfaces and focus colors from one paired wallpaper each.
 
 ## Install
 
@@ -12,32 +12,28 @@ Omarchy installs the repository as `gta6` and rebuilds protected application con
 
 ## Included
 
-- Twelve original-resolution SFW backgrounds selected from the requested [Wallhaven GTA VI search](https://wallhaven.cc/search?q=Grand+Theft+Auto+VI&categories=110&purity=100&sorting=relevance&order=desc)
-- Four complete Omarchy Quattro palettes: Vice Sunset, Ocean Drive, Leonida Night, and Biscayne Day
+- Twenty-seven original-resolution SFW backgrounds, including every supplied Wallhaven link
+- Sixteen complete Omarchy Quattro palettes: Vice Sunset plus fifteen wallpaper-specific editions
 - Yaru Magenta icons
 - Shell palettes tuned for long sessions, not a full-screen neon effect
 
-## Palette variants
+## Wallpaper editions
 
-The normal install uses **Vice Sunset**. The other palettes live in [`variants/`](variants/) and can be exported as independent Omarchy themes without changing the git-managed `gta6` checkout:
+The normal install uses **Vice Sunset** and contains the full wallpaper collection. Additional editions live in [`variants/`](variants/) and export as independent Omarchy themes with only their paired wallpaper.
 
-- **Ocean Drive** — deep blue-black surfaces with pool-water cyan focus
-- **Leonida Night** — midnight plum with warm streetlight gold focus
-- **Biscayne Day** — a low-glare sand-and-sea light theme
-
-Create and switch to one with:
+Create and switch to an edition with:
 
 ```bash
-~/.config/omarchy/themes/gta6/scripts/create-variant.sh ocean-drive
+~/.config/omarchy/themes/gta6/scripts/create-variant.sh leonida-blue
 ```
 
-See [the variant guide](variants/README.md) for all names and behavior. The helper only runs when called directly, refuses to overwrite an existing theme, and keeps `omarchy theme update` pulling the original `gta6` repository cleanly.
+See [the edition guide](variants/README.md) for all names and wallpaper cues. The helper only runs when called directly, refuses to overwrite an existing theme, and keeps `omarchy theme update` pulling the original `gta6` repository cleanly.
 
 ## Design decisions
 
-- Color: charcoal-plum surfaces echo the night scenes without tinting every panel pink.
-- Accent: each palette gets one clear focus color rather than tinting every surface.
-- Support colors: pool-water cyan and sunset gold keep status colors legible while staying inside the source art.
+- Color: each edition starts with dominant tones extracted from its wallpaper, then deepens or lightens them for readable surfaces.
+- Accent: a real focal color from the paired artwork marks focus and primary state.
+- Support colors: status colors bend toward the image without losing their terminal meaning.
 - Typography: Omarchy keeps the user's configured font so a visual theme never changes reading behavior.
 - Spacing and layout: the theme leaves Omarchy's layout untouched because the makeover should feel native.
 - Artwork: broad scenic compositions keep windows readable and reserve logos for one optional background.

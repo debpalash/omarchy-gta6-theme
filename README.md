@@ -1,6 +1,6 @@
 # GTA6 for Omarchy
 
-A restrained Grand Theft Auto VI fan theme for Omarchy. GTA6 keeps the desktop dark and readable, then lets flamingo pink, pool-water cyan, warm sand, and the supplied artwork carry the atmosphere.
+A restrained Grand Theft Auto VI fan theme collection for Omarchy. The default Vice Sunset palette keeps the desktop dark and readable, then lets flamingo pink, pool-water cyan, warm sand, and the supplied artwork carry the atmosphere.
 
 ## Install
 
@@ -12,15 +12,31 @@ Omarchy installs the repository as `gta6` and rebuilds protected application con
 
 ## Included
 
-- Six original-resolution SFW backgrounds selected from the requested [Wallhaven GTA VI search](https://wallhaven.cc/search?q=Grand+Theft+Auto+VI&categories=110&purity=100&sorting=relevance&order=desc)
-- A complete Omarchy Quattro `colors.toml`
+- Twelve original-resolution SFW backgrounds selected from the requested [Wallhaven GTA VI search](https://wallhaven.cc/search?q=Grand+Theft+Auto+VI&categories=110&purity=100&sorting=relevance&order=desc)
+- Four complete Omarchy Quattro palettes: Vice Sunset, Ocean Drive, Leonida Night, and Biscayne Day
 - Yaru Magenta icons
-- A dark shell palette tuned for long sessions, not a full-screen neon effect
+- Shell palettes tuned for long sessions, not a full-screen neon effect
+
+## Palette variants
+
+The normal install uses **Vice Sunset**. The other palettes live in [`variants/`](variants/) and can be exported as independent Omarchy themes without changing the git-managed `gta6` checkout:
+
+- **Ocean Drive** — deep blue-black surfaces with pool-water cyan focus
+- **Leonida Night** — midnight plum with warm streetlight gold focus
+- **Biscayne Day** — a low-glare sand-and-sea light theme
+
+Create and switch to one with:
+
+```bash
+~/.config/omarchy/themes/gta6/scripts/create-variant.sh ocean-drive
+```
+
+See [the variant guide](variants/README.md) for all names and behavior. The helper only runs when called directly, refuses to overwrite an existing theme, and keeps `omarchy theme update` pulling the original `gta6` repository cleanly.
 
 ## Design decisions
 
 - Color: charcoal-plum surfaces echo the night scenes without tinting every panel pink.
-- Accent: flamingo pink marks focus and primary state because it is the most immediate GTA VI cue.
+- Accent: each palette gets one clear focus color rather than tinting every surface.
 - Support colors: pool-water cyan and sunset gold keep status colors legible while staying inside the source art.
 - Typography: Omarchy keeps the user's configured font so a visual theme never changes reading behavior.
 - Spacing and layout: the theme leaves Omarchy's layout untouched because the makeover should feel native.

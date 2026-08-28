@@ -1,14 +1,14 @@
-# Vice for Omarchy
+# GTA6 for Omarchy
 
-A restrained Grand Theft Auto VI fan theme for Omarchy. Vice keeps the desktop dark and readable, then lets flamingo pink, pool-water cyan, warm sand, and the supplied artwork carry the atmosphere.
+A restrained Grand Theft Auto VI fan theme for Omarchy. GTA6 keeps the desktop dark and readable, then lets flamingo pink, pool-water cyan, warm sand, and the supplied artwork carry the atmosphere.
 
 ## Install
 
 ```bash
-omarchy theme install https://github.com/debpalash/omarchy-vice-theme.git
+omarchy theme install https://github.com/debpalash/omarchy-gta6-theme.git
 ```
 
-Omarchy installs the repository as `vice` and rebuilds protected application configs from `colors.toml`.
+Omarchy installs the repository as `gta6` and rebuilds protected application configs from `colors.toml`.
 
 ## Included
 

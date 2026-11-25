@@ -32,7 +32,12 @@ fi
 scratch=$(mktemp -d)
 trap 'rm -rf -- "$scratch"' EXIT
 
-git -C "$source_dir" archive HEAD -- README.md LICENSE ASSETS.md assets.json icons.theme "$wallpaper" | tar -x -C "$scratch"
+git -C "$source_dir" archive HEAD -- LICENSE ASSETS.md assets.json icons.theme "$wallpaper" | tar -x -C "$scratch"
+jq -r '"# GTA VI · \(.name)\n\n\(.description)"' <<<"$edition" > "$scratch/README.md"
+cat >> "$scratch/README.md" <<'EOF'
+
+[Edition guide](https://github.com/debpalash/omarchy-gta6-theme/tree/main/variants) · [Artwork credits](ASSETS.md)
+EOF
 cp "$source_dir/$palette" "$scratch/colors.toml"
 mkdir -p "$target_root"
 mv "$scratch" "$target_dir"

@@ -84,7 +84,7 @@ PY
 
 while IFS= read -r -d '' background; do
   case "$(file --mime-type -b "$background")" in
-    image/png | image/jpeg) ;;
+    image/png | image/jpeg | image/webp) ;;
     *)
       echo "background directory contains a non-image file: $background" >&2
       exit 1
